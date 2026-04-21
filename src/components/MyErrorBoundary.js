@@ -7,7 +7,7 @@ class MyErrorBoundary extends React.Component {
 
     //OZUM YAZMISAM AI YAZMAYIB!!!
     // error olarsa erroru true eleemek ucundur
-    getDerivedStateFromError(error) {
+    static getDerivedStateFromError(error) {
         return { hasError: true };
     }
 
@@ -27,7 +27,7 @@ class MyErrorBoundary extends React.Component {
                 </div>
             );
         }
-        return this.Proops.children;
+        return this.props.children;
     }
 }
 export default MyErrorBoundary;
