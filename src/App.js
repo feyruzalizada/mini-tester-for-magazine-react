@@ -8,7 +8,7 @@ function App() {
   const startTime = React.useRef(performance.now());
   
   React.useEffect(() => {
-    const duration = performance.now() - startTime;
+    const duration = performance.now() - startTime.current;
     console.log(`⏱️Rendered for ${duration.toFixed(2)} ms`);
   }, []);
 
