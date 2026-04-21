@@ -4,7 +4,7 @@ const TransactionModule = () => {
     const [amount, setAmount] = useState(0);
     //OZUM YAZMISAM COMMITI
     //bilerekten kodu qiriram test elemek ucun
-    if (amount > 100) {
+    if (amount > 1000) {
         throw new Error("Transaction is too large! Limit exceeded.")
     }
     return (
